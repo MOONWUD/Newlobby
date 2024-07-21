@@ -5,15 +5,18 @@
 
   - 공통    
     - 주석    
-      scetion = * 10       
-      article = * 5    
+      section = * 10 (section 사이 간 2줄 띄어쓰기)       
+      article = * 5 (article 사이 간 1 줄 띄어쓰기)   
       container = * 3    
       설명은 기본 주석    
     - 파일명    
-    - 선택자    
+    - 선택자
+     
   - html    
   - css    
-  - js    
+  - js
+     
+       
 ### 240721 (일)
 다양한 퍼블리싱 기술이 적용된 새로비 사이트를 똑같이 구현하는 것을 목표로 한다.     
     
