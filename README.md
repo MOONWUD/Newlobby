@@ -16,7 +16,17 @@
   - css    
   - js
 
+
          
+### 240725 (목)
+- header TextLogo 타이밍 조절
+    
+### 240724 (수)
+- main css 설계
+    
+### 240723 (화)
+- main html 설계
+
 ### 240722 (월)
 - var 설정
 - header + footer 구현
