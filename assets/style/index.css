@@ -17,6 +17,8 @@ header {
   grid-template-columns: 1fr 1fr;
   align-content: center;
   padding: 0 2vw;
+  /*===== logoWrapper */
+  /*===== navWrapper */
 }
 header .logoWrapper a {
   display: flex;
@@ -133,4 +135,51 @@ header .navWrapper .mainMenu_item .subMenu_wrapper .subMenu_item:hover {
 }
 
 /*========== main */
-/*========== footer *//*# sourceMappingURL=index.css.map */
+/*========== footer */
+footer {
+  /*===== footerTop */
+  /*===== footerBottom */
+}
+footer .footerTop {
+  width: 100%;
+  height: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footerTop .banner {
+  width: 100%;
+}
+footer .footerTop .banner a {
+  width: 100%;
+  height: 120px;
+  background-color: #5BCB93;
+  display: flex;
+  gap: 30px;
+}
+footer .footerTop .banner a img {
+  align-self: end;
+}
+footer .footerTop .banner a .textWrapper {
+  font-weight: 600;
+  align-self: center;
+}
+footer .footerTop .banner a .textWrapper h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer .footerTop .banner a .textWrapper p {
+  font-size: 14px;
+}
+footer .footerTop .bannerRight a {
+  background-color: #FFEE7C;
+}
+footer .footerBottom {
+  width: 100%;
+  padding: 40px 2vw 60px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #000;
+  font-size: 13px;
+  font-weight: 400;
+}/*# sourceMappingURL=index.css.map */
