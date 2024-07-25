@@ -13,9 +13,124 @@ header {
   width: 100%;
   height: 90px;
   background-color: #fff;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
   padding: 0 2vw;
 }
+header .logoWrapper a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .logoWrapper a .graphicLogo {
+  display: flex;
+}
+header .logoWrapper a .graphicLogo .graphic {
+  width: 13px;
+  height: 13px;
+  display: block;
+}
+header .logoWrapper a .graphicLogo .graphic:nth-child(1) {
+  background-color: #5BCB93;
+  border-radius: 13px 0 0 0;
+}
+header .logoWrapper a .graphicLogo .graphic:nth-child(2) {
+  background-color: #FFEE7C;
+  border-radius: 0 0 0 13px;
+}
+header .logoWrapper a .graphicLogo .graphic:nth-child(3) {
+  background-color: #DFE1EC;
+  border-radius: 0 0 13px 0;
+}
+header .logoWrapper a .textLogo {
+  font-weight: 800;
+  font-size: 18px;
+  overflow: hidden;
+  height: 22px;
+}
+header .logoWrapper a .textLogo h1 div {
+  height: 21px;
+  display: inline-block;
+}
+header .logoWrapper a .textLogo .textLogo_en {
+  animation: show 5s linear infinite;
+}
+@keyframes show {
+  0% {
+    margin-top: -42px;
+  }
+  5% {
+    margin-top: -21px;
+  }
+  33% {
+    margin-top: -21px;
+  }
+  38% {
+    margin-top: -21px;
+  }
+  66% {
+    margin-top: 0px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -42px;
+  }
+}
+header .navWrapper {
+  justify-self: end;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  padding-right: 2vw;
+}
+header .navWrapper .mainMenu_item {
+  width: 100px;
+  display: block;
+  position: relative;
+}
+header .navWrapper .mainMenu_item:hover .mainMenu_btn {
+  background-color: #5BCB93;
+  height: 90px;
+}
+header .navWrapper .mainMenu_item:hover .subMenu_wrapper {
+  display: block;
+  top: 30px;
+  opacity: 1;
+}
+header .navWrapper .mainMenu_item .mainMenu_btn {
+  transition: 0.3s;
+  background-color: transparent;
+  padding: 8px;
+  width: 90px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+header .navWrapper .mainMenu_item .subMenu_wrapper {
+  transition: 0.3s;
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  z-index: 99;
+  background-color: #fff;
+  width: 120px;
+  border: 1px solid #5BCB93;
+}
+header .navWrapper .mainMenu_item .subMenu_wrapper .subMenu_item {
+  padding: 10px 8px;
+}
+header .navWrapper .mainMenu_item .subMenu_wrapper .subMenu_item:hover {
+  background-color: #5BCB93;
+}
+
 /*========== main */
 /*========== footer *//*# sourceMappingURL=index.css.map */
