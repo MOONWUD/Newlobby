@@ -3,9 +3,9 @@
 /*========== weight */
 /*========== font */
 body {
-  font-family: "TheJamsil5Bold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2") format("woff2");
+  font-family: "Freesentation-9Black", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #000;
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2") format("woff2");
 }
 
 /*========== header */
@@ -86,7 +86,7 @@ header .logoWrapper a .textLogo .textLogo_en {
 }
 header .navWrapper {
   justify-self: end;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   display: flex;
   gap: 10px;
@@ -151,20 +151,20 @@ main .about .titleWrapper {
   margin-bottom: 30px;
 }
 main .about .titleWrapper h2 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 60px;
 }
 main .about .text {
   margin-bottom: 60px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
 }
 main .about .text span {
-  font-weight: 700;
+  font-weight: 900;
 }
 main .about .link {
   display: flex;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 14px;
 }
 main .object {
@@ -189,7 +189,7 @@ main .notice {
 }
 main .notice .noticeLeft {
   align-self: start;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 30px;
 }
 main .notice .noticeRight a {
@@ -201,16 +201,16 @@ main .notice .noticeRight a {
   justify-content: space-between;
 }
 main .notice .noticeRight a .left h5 {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 24px;
   margin-bottom: 10px;
 }
 main .notice .noticeRight a .left p {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
 }
 main .notice .noticeRight a .right {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 14px;
 }
 
@@ -241,7 +241,7 @@ footer .footerTop .banner a img {
   align-self: end;
 }
 footer .footerTop .banner a .textWrapper {
-  font-weight: 600;
+  font-weight: 800;
   align-self: center;
 }
 footer .footerTop .banner a .textWrapper h6 {
@@ -262,5 +262,5 @@ footer .footerBottom {
   color: #fff;
   background-color: #000;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */
