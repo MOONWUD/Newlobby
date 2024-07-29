@@ -17,7 +17,12 @@
   - js
 
 ### 240729 (월)
-- 오늘 완성 목표 !!!! 
+#### 오늘 완성 목표 !!!! 아자자 ~ 
+
+- favicon 설정 완료 !
+- header slide Up and Down 부드럽게 설정 완료 !
+- header graphic logo css animation 설정 (js는 고민)
+- header text logo 타이밍 조정 
          
 ### 240725 (목)
 - header TextLogo 타이밍 조절
