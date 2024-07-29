@@ -2,6 +2,7 @@
 /*========== size */
 /*========== weight */
 /*========== font */
+/*========== transition */
 body {
   font-family: "Freesentation-9Black", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #000;
@@ -39,7 +40,7 @@ header .logoWrapper a .graphicLogo .graphic {
 }
 header .logoWrapper a .graphicLogo .graphic:nth-child(1) {
   background-color: #5BCB93;
-  animation: graphic1 20s linear infinite;
+  animation: graphic1 25s linear infinite;
 }
 @keyframes graphic1 {
   0% {
@@ -108,7 +109,7 @@ header .logoWrapper a .graphicLogo .graphic:nth-child(1) {
 }
 header .logoWrapper a .graphicLogo .graphic:nth-child(2) {
   background-color: #FFEE7C;
-  animation: graphic2 20s linear infinite;
+  animation: graphic2 25s linear infinite;
 }
 @keyframes graphic2 {
   0% {
@@ -177,7 +178,7 @@ header .logoWrapper a .graphicLogo .graphic:nth-child(2) {
 }
 header .logoWrapper a .graphicLogo .graphic:nth-child(3) {
   background-color: #DFE1EC;
-  animation: graphic3 20s linear infinite;
+  animation: graphic3 25s linear infinite;
 }
 @keyframes graphic3 {
   0% {
@@ -354,6 +355,9 @@ main .about .titleWrapper h2 {
   font-size: 60px;
 }
 main .about .text {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.1s;
   margin-bottom: 60px;
   font-weight: 600;
   font-size: 18px;
@@ -362,11 +366,15 @@ main .about .text span {
   font-weight: 800;
 }
 main .about .link {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.1s;
   display: flex;
   font-weight: 700;
   font-size: 14px;
 }
 main .object {
+  margin-bottom: 200px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -380,7 +388,6 @@ main .object .objectItem {
   border-radius: 100% 0 0 0;
 }
 main .notice {
-  margin-top: 200px;
   padding: 0 2vw;
   display: grid;
   gap: 40px;
@@ -390,6 +397,11 @@ main .notice .noticeLeft {
   align-self: start;
   font-weight: 500;
   font-size: 30px;
+}
+main .notice .noticeRight {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.1s;
 }
 main .notice .noticeRight a {
   border-top: 1px solid #DFE1EC;

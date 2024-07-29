@@ -36,7 +36,7 @@ header {
           
           &:nth-child(1) {
             background-color: $mainColorG;
-            animation: graphic1 20s linear infinite;
+            animation: graphic1 25s linear infinite;
             @keyframes graphic1 {
               0% { border-radius: 0 0 0 0; }
               9% { border-radius: 0 0 0 0; }
@@ -63,7 +63,7 @@ header {
           }
           &:nth-child(2) {
             background-color: $mainColorY;
-            animation: graphic2 20s linear infinite;
+            animation: graphic2 25s linear infinite;
             @keyframes graphic2 {
               0% { border-radius: 13px 0 0 0; }
               9% { border-radius: 13px 0 0 0; }
@@ -90,7 +90,7 @@ header {
           }
           &:nth-child(3) {
             background-color: $subColor;
-            animation: graphic3 20s linear infinite;
+            animation: graphic3 25s linear infinite;
             @keyframes graphic3 {
               0% { border-radius: 0 0 13px 0; }
               9% { border-radius: 0 0 13px 0; }
@@ -211,6 +211,7 @@ main {
 
   /*========== main - home */
 
+
   /*========== main - about */
   .about {
     width: 100%;
@@ -224,6 +225,9 @@ main {
       }
     }
     .text {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: $textUp;
       margin-bottom: 60px;
       font-weight: $w_md;
       font-size: $s_lg;
@@ -232,6 +236,9 @@ main {
       }
     }
     .link {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: $textUp;
       display: flex;
       font-weight: $w_lg;
       font-size: $s_md;
@@ -241,6 +248,7 @@ main {
 
   /*========== main - object */
   .object {
+    margin-bottom: 200px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -258,7 +266,6 @@ main {
 
   /*========== main - notice */
   .notice {
-    margin-top: 200px;
     padding: 0 2vw;
     display: grid;
     gap: 40px;
@@ -270,6 +277,9 @@ main {
       font-size: 30px;
     }
     .noticeRight {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: $textUp;
       a {
         border-top: 1px solid $subColor;
         border-bottom: 1px solid $subColor;
