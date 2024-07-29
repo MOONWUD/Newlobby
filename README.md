@@ -21,8 +21,8 @@
 
 - favicon 설정 완료 !
 - header slide Up and Down 부드럽게 설정 완료 !
+- header text logo 타이밍 조정 완료인듯 하지만,, 조금 더 찾아보고 부드럽게 변경 필요 !!!!!
 - header graphic logo css animation 설정 (js는 고민)
-- header text logo 타이밍 조정 
          
 ### 240725 (목)
 - header TextLogo 타이밍 조절
