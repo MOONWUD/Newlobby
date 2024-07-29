@@ -31,18 +31,89 @@ header {
           width: 13px;
           height: 13px;
           display: block;
-
+          transition: 0.05s;
+          border-radius: 0 0 0 0;
+          
           &:nth-child(1) {
             background-color: $mainColorG;
-            border-radius: 13px 0 0 0;
+            animation: graphic1 20s linear infinite;
+            @keyframes graphic1 {
+              0% { border-radius: 0 0 0 0; }
+              9% { border-radius: 0 0 0 0; }
+              10% { border-radius: 13px 0 0 0; }
+              19% { border-radius: 13px 0 0 0; }
+              20% { border-radius: 0 0 13px 0; }
+              29% { border-radius: 0 0 13px 0; }
+              30% { border-radius: 0 13px 0 0; }
+              39% { border-radius: 0 13px 0 0; }
+              40% { border-radius: 0 0 0 13px; }
+              49% { border-radius: 0 0 0 13px; }
+              50% { border-radius: 0 0 13px 0; }
+              59% { border-radius: 0 0 13px 0; }
+              61% { border-radius: 13px 0 0 0; }
+              69% { border-radius: 13px 0 0 0; }
+              70% { border-radius: 0 13px 0 0; }
+              79% { border-radius: 0 13px 0 0; }
+              80% { border-radius: 0 0 13px 0; }
+              89% { border-radius: 0 0 13px 0; }
+              90% { border-radius: 0 13px 0 0; }
+              99% { border-radius: 0 13px 0 0; }
+              100% { border-radius: 0 0 0 13px; }
+            }
           }
           &:nth-child(2) {
             background-color: $mainColorY;
-            border-radius: 0 0 0 13px;
+            animation: graphic2 20s linear infinite;
+            @keyframes graphic2 {
+              0% { border-radius: 13px 0 0 0; }
+              9% { border-radius: 13px 0 0 0; }
+              10% { border-radius: 0 0 13px 0; }
+              19% { border-radius: 0 0 13px 0; }
+              20% { border-radius: 0 0 0 13px; }
+              29% { border-radius: 0 0 0 13px; }
+              31% { border-radius: 0 13px 0 0; }
+              39% { border-radius: 0 13px 0 0; }
+              40% { border-radius: 0 0 0 13px; }
+              49% { border-radius: 0 0 0 13px; }
+              50% { border-radius: 13px 0 0 0; }
+              59% { border-radius: 13px 0 0 0; }
+              60% { border-radius: 0 0 13px 0; }
+              69% { border-radius: 0 0 13px 0; }
+              70% { border-radius: 0 0 0 13px; }
+              79% { border-radius: 0 0 0 13px; }
+              80% { border-radius: 0 0 13px 0; }
+              89% { border-radius: 0 0 13px 0; }
+              90% { border-radius: 0 13px 0 0; }
+              99% { border-radius: 0 13px 0 0; }
+              100% { border-radius: 0 0 0 0; }
+            }
           }
           &:nth-child(3) {
             background-color: $subColor;
-            border-radius: 0 0 13px 0; 
+            animation: graphic3 20s linear infinite;
+            @keyframes graphic3 {
+              0% { border-radius: 0 0 13px 0; }
+              9% { border-radius: 0 0 13px 0; }
+              10% { border-radius: 0 13px 0 0; }
+              19% { border-radius: 0 13px 0 0; }
+              20% { border-radius: 13px 0 0 0; }
+              29% { border-radius: 13px 0 0 0; }
+              30% { border-radius: 0 0 13px 0; }
+              39% { border-radius: 0 0 13px 0; }
+              40% { border-radius: 0 13px 0 0; }
+              49% { border-radius: 0 13px 0 0; }
+              50% { border-radius: 13px 0 0 0; }
+              59% { border-radius: 13px 0 0 0; }
+              60% { border-radius: 0 0 0 13px; }
+              69% { border-radius: 0 0 0 13px; }
+              70% { border-radius: 0 0 13px 0; }
+              79% { border-radius: 0 0 13px 0; }
+              81% { border-radius: 13px 0 0 0; }
+              89% { border-radius: 13px 0 0 0; }
+              90% { border-radius: 0 13px 0 0; }
+              99% { border-radius: 0 13px 0 0; }
+              100% { border-radius: 0 0 0 0; }
+            }
           }
         } 
       }
@@ -57,21 +128,20 @@ header {
           div {
             height: 21px;
             display: inline-block;
-            // margin-bottom: 21px;
           }
         }
         .textLogo_en {
           // display: none;
-          animation: show 5s linear infinite;
+          animation: show 7s linear infinite;
           @keyframes show {
-            0% {margin-top:-42px;}
+            0% {margin-top:0px;}
             5% {margin-top:-21px;}
             33% {margin-top:-21px;}
             38% {margin-top:-21px;}
-            66% {margin-top:0px;}
+            66% {margin-top:-21px;}
             71% {margin-top:0px;}
             99% {margin-top:0px;}
-            100% {margin-top:-42px;}
+            100% {margin-top:0px;}
           }
         }
       }
@@ -89,7 +159,7 @@ header {
     padding-right: 2vw;
     line-height: 0.8;
     .mainMenu_item {
-      width: 100px;
+      width: 90px;
       display: block;
       position: relative;
       &:hover {
@@ -106,7 +176,7 @@ header {
       .mainMenu_btn {
         transition: 0.3s;
         background-color: transparent;
-        padding: 8px;
+        padding: 10px;
         width: 90px;
         height: 0px;
         position: absolute;
